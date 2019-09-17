@@ -31,12 +31,15 @@ public class Main {
         }
     }
 
-    @Contract(pure = true)
+    @Contract(pure = true)//intellijj reccomendation
     public static String convert(@NotNull String hexval) {
         String[] hexvaluesarray = new String[]{"0000", "0001", "0010", "0011", "0100", "0101", "0110", "0111", "1000", "1001", "1010", "1011", "1100", "1101", "1110", "1111" };
-        char[] hexchar = hexval.toCharArray();
+        int Hexvalplusone= hexval.length()+1;
+        char[] hexchar= new char[Hexvalplusone];
+        hexchar = hexval.toCharArray();
         String output1="";
         int length =hexchar.length;
+        //hexchar[length+1]='0'; I need to find a way so that I can append a zero to the array hexchar
         for (int i = 1; i < length; i++) {
             if (hexchar[i] == '0') {
                  output1 = output1 + hexvaluesarray[0];

@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81d58f45-7dd4-4e08-a1b7-d4bdcde757e1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hex to binary.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hex to binary.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hex to binary/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hex to binary/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hex to binary/Main.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +43,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -81,7 +79,7 @@
       <workItem from="1568557905935" duration="9209000" />
       <workItem from="1568585317248" duration="5766000" />
       <workItem from="1568595390651" duration="4647000" />
-      <workItem from="1568661055234" duration="629000" />
+      <workItem from="1568661055234" duration="2960000" />
     </task>
     <servers />
   </component>
