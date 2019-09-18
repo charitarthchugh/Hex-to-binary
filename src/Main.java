@@ -1,5 +1,4 @@
-import org.jetbrains.annotations.Contract;
-import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.*;
 import java.util.Scanner;
 
 public class Main {
@@ -12,7 +11,6 @@ public class Main {
         System.out.println("Type in the the hex value:");
         String hexvalue = scan.next();
         hexvalue = hexvalue.toUpperCase();
-        voidcheck(hexvalue);
         System.out.println("The original hex value was: " + hexvalue);
         System.out.println("The binary value is "+ convert(hexvalue));
         System.exit(0);
@@ -22,25 +20,20 @@ public class Main {
     public static void voidcheck(String input) {
         char[] alphabet = "GHIJKLMNOPQRSTUVXYZ!@#$%^&*()~{}|:<>?[];',. ".toCharArray();
         String[] voidarray = new String[]{String.copyValueOf(alphabet)};
-        int length = voidarray.length;
-        for (int i = 0; i < length; i++) {
+        for (int i = 0; i < voidarray.length; i++) {
             if (input.contains(voidarray[i])) {
-                System.out.println("Contains invalid characters");
                 System.exit(0);
             }
         }
+
     }
 
     @Contract(pure = true)//intellijj reccomendation
-    public static String convert(@NotNull String hexval) {
+    public static String convert(@NotNull /*Intellij Recommendation*/ String hexval1) {
         String[] hexvaluesarray = new String[]{"0000", "0001", "0010", "0011", "0100", "0101", "0110", "0111", "1000", "1001", "1010", "1011", "1100", "1101", "1110", "1111" };
-        int Hexvalplusone= hexval.length()+1;
-        char[] hexchar= new char[Hexvalplusone];
-        hexchar = hexval.toCharArray();
+        char[] hexchar= hexval1.toCharArray();
         String output1="";
-        int length =hexchar.length;
-        //hexchar[length+1]='0'; I need to find a way so that I can append a zero to the array hexchar
-        for (int i = 1; i < length; i++) {
+        for (int i = 0; i < hexval1.length(); i++) {
             if (hexchar[i] == '0') {
                  output1 = output1 + hexvaluesarray[0];
             } else if (hexchar[i] == '1') {
